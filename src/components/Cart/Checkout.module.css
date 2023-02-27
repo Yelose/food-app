@@ -1,0 +1,61 @@
+.control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.control > div {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    gap: 2%;
+    padding: 4px 20px;
+    
+}
+.control > p {
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: red;
+}
+.control > div label {
+    flex: 1;
+    text-align: end;
+}
+.control > div input {
+    padding: 5px;
+    flex:2;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 3px 1px #8a2b06;
+}
+
+.control > div input:focus {
+    outline-color:#8a2b06;
+}
+
+.invalid {
+    background-color: #8a2b0674;
+    outline-color: red;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 5%;
+}
+.buttons button {
+    border-radius: 20px;
+    background-color: #8a2b06;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+}
+.buttons button:hover {
+    cursor: pointer
+}
+
+.buttons .confirm:hover, .cancel:hover{
+    box-shadow: 2px 2px 10px 1px #8a2b06;
+    color: white;
+}
+
